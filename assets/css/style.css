@@ -84,7 +84,7 @@ body {
   background-color: #fff;
   min-height: 100vh;
   background-image: url("../images/bg-mobile.png");
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -170,7 +170,7 @@ main {
   margin-bottom: 0.5rem;
 }
 .Form .form-container form .submit-button {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   background: #7993a5;
   border-radius: 10px;
   border: none;
@@ -190,6 +190,9 @@ main {
   transition: background-color 0.1s ease-in 0s, box-shadow 0.1s ease-in 0s, -webkit-box-shadow 0.1s ease-in 0s;
   text-transform: uppercase;
   cursor: pointer;
+}
+.Form .form-container form .submit-button:hover {
+  background-color: #54626b;
 }
 .Form .form-container form .iFTUZ {
   color: #dd362a;
@@ -258,9 +261,15 @@ main {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .Footer ul li {
   margin-right: 18px;
+  margin-bottom: 25px;
 }
 .Footer ul li a {
   text-decoration: none;
@@ -280,6 +289,10 @@ main {
 }
 .Footer ul li a span {
   margin-left: 8px;
+  margin-bottom: 2px;
+}
+.Footer ul li a:hover span {
+  text-decoration: underline;
 }
 
 /*
@@ -386,7 +399,7 @@ Meida Queries  991px
             justify-content: flex-start;
   }
 }
-@media (max-height: 768px) {
+@media screen and (max-height: 768px) and (min-width: 1366px) {
   .Header {
     padding: 40px 70px;
   }
