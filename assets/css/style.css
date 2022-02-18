@@ -161,6 +161,14 @@ main {
   padding: 2.5rem 2.75rem;
   position: relative;
 }
+.Form .form-container form .dEVaGV {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #5d5d65;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
 .Form .form-container form .submit-button {
   font-family: "Work Sans", sans-serif;
   background: #7993a5;
@@ -182,6 +190,35 @@ main {
   transition: background-color 0.1s ease-in 0s, box-shadow 0.1s ease-in 0s, -webkit-box-shadow 0.1s ease-in 0s;
   text-transform: uppercase;
   cursor: pointer;
+}
+.Form .form-container form .iFTUZ {
+  color: #dd362a;
+}
+.Form .form-container form .iMsgpL {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: white;
+  border: 0px none;
+  border-radius: 0.1875rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #434d5d;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  min-height: 2.8125rem;
+  outline: currentcolor none 0px;
+  padding: 0.75rem 1rem;
+  -webkit-transition: -webkit-box-shadow 0.2s ease 0s;
+  transition: -webkit-box-shadow 0.2s ease 0s;
+  transition: box-shadow 0.2s ease 0s;
+  transition: box-shadow 0.2s ease 0s, -webkit-box-shadow 0.2s ease 0s;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.Form .form-container form .iMsgpL:focus {
+  -webkit-box-shadow: transparent 0px 0px 0px 0px inset, #101a25 0px 0px 0px 1px inset, rgba(80, 156, 246, 0.25) 0px 0px 0px 2px;
+          box-shadow: transparent 0px 0px 0px 0px inset, #101a25 0px 0px 0px 1px inset, rgba(80, 156, 246, 0.25) 0px 0px 0px 2px;
 }
 .Form .box-thanks {
   display: -webkit-box;

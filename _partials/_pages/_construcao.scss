@@ -79,6 +79,14 @@ main {
     padding: 2.5rem 2.75rem;
     position: relative;
     form {
+      .dEVaGV {
+        font-family: Helvetica, Arial, sans-serif;
+        color: rgb(93, 93, 101);
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
       .submit-button {
         font-family: "Work Sans", sans-serif;
         background: $buttom;
@@ -97,6 +105,30 @@ main {
         transition: background-color 0.1s ease-in 0s, box-shadow 0.1s ease-in 0s;
         text-transform: uppercase;
         cursor: pointer;
+      }
+      .iFTUZ {
+        color: rgb(221, 54, 42);
+      }
+      .iMsgpL {
+        appearance: none;
+        background-color: rgb(255, 255, 255);
+        border: 0px none;
+        border-radius: 0.1875rem;
+        box-sizing: border-box;
+        color: rgb(67, 77, 93);
+        font-size: 0.875rem;
+        line-height: 1.5;
+        min-height: 2.8125rem;
+        outline: currentcolor none 0px;
+        padding: 0.75rem 1rem;
+        transition: box-shadow 0.2s ease 0s;
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      .iMsgpL:focus {
+        box-shadow: transparent 0px 0px 0px 0px inset,
+          rgb(16, 26, 37) 0px 0px 0px 1px inset,
+          rgba(80, 156, 246, 0.25) 0px 0px 0px 2px;
       }
     }
   }
