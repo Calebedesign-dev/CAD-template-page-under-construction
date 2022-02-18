@@ -1,0 +1,275 @@
+body {
+  background-color: $bg;
+  min-height: 100vh;
+  background-image: url("../images/bg-mobile.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main {
+  width: 100%;
+  height: auto;
+  color: $white;
+}
+.grid-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header"
+    "Content Content"
+    "Form Form"
+    "Footer Footer";
+}
+.Header {
+  grid-area: Header;
+  padding: 40px 90px 40px 40px;
+  img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.Content {
+  grid-area: Content;
+  padding: 40px;
+  h1 {
+    font-family: $font-family-title;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: $primary;
+    margin-bottom: 35px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: $primary;
+  }
+  a {
+    text-decoration: none;
+    color: $primary;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.Form {
+  grid-area: Form;
+  padding: 15px 0 10px;
+  .wrapform {
+    width: 100%;
+    height: 100%;
+    background: $bg-form;
+  }
+  .form-container {
+    border-radius: 0;
+    max-width: 35.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5rem 2.75rem;
+    position: relative;
+    form {
+      .submit-button {
+        font-family: "Work Sans", sans-serif;
+        background: $buttom;
+        border-radius: 10px;
+        border: none;
+        display: inline-block;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 200%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #ffffff;
+        outline: currentcolor none 0px;
+        padding: 22px 68px;
+        text-decoration: none;
+        transition: background-color 0.1s ease-in 0s, box-shadow 0.1s ease-in 0s;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+  .box-thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 266px;
+    justify-content: center;
+  }
+  h2 {
+    color: #707070;
+    margin-bottom: 0;
+  }
+}
+
+.Footer {
+  grid-area: Footer;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    li {
+      margin-right: 18px;
+      a {
+        text-decoration: none;
+        color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        svg {
+          fill: $primary;
+        }
+        span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+/*
+=====================================================
+Meida Queries  576px
+=====================================================
+*/
+@media (min-width: 576px) {
+  .Header {
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+}
+// 576px
+
+/*
+=====================================================
+Meida Queries  768px
+=====================================================
+*/
+@media (min-width: 768px) {
+  .grid-container {
+    height: 100vh;
+  }
+  .Content {
+    padding: 40px 200px;
+  }
+  .Form {
+    padding: 15px 140px 70px;
+  }
+}
+// 768px
+
+/*
+=====================================================
+Meida Queries  991px
+=====================================================
+*/
+@media (min-width: 991px) {
+  body {
+    background-image: url("../images/bg.png");
+    background-size: auto auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 50% 20%;
+    gap: 0px 0px;
+
+    grid-template-areas:
+      "Header Header"
+      "Content Form"
+      "Footer Footer";
+  }
+
+  .Header {
+    padding: 70px;
+    img {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  .Content {
+    padding: 0 70px 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    h1 {
+      font-size: 52px;
+      line-height: 60px;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 180%;
+    }
+  }
+
+  .Form {
+    padding: 0 180px 70px 70px;
+    .wrapform {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+    .form-container {
+      border-radius: 10px;
+      max-width: 35.25rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2.5rem 2.75rem;
+      position: relative;
+    }
+  }
+
+  .Footer {
+    padding: 30px 70px 30px 180px;
+    justify-content: flex-start;
+  }
+}
+// 991px
+
+// Controle para telas notbook de altura de 768px
+@media (max-height: 768px) {
+  .Header {
+    padding: 40px 70px;
+    img {
+      width: 80px;
+    }
+  }
+
+  .Content {
+    padding: 0 70px 0 180px;
+    h1 {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  .Form {
+    padding: 0 180px 0 70px;
+  }
+}
