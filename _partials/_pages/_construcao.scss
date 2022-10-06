@@ -1,7 +1,8 @@
 body {
+  background-color: $bg;
   min-height: 100vh;
-  background-image: url("../../assets/images/BaciaViva_bg.png");
-  background-size: cover;
+  background-image: url("../images/bg-mobile.png");
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -25,7 +26,7 @@ main {
 }
 .Header {
   grid-area: Header;
-  padding: 40px 90px 20px 40px;
+  padding: 40px 90px 40px 40px;
   img {
     width: 150px;
     height: auto;
@@ -39,11 +40,11 @@ main {
     font-family: $font-family-title;
     font-weight: normal;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 40px;
     line-height: 44px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: $primary;
     margin-bottom: 35px;
   }
   p {
@@ -51,11 +52,11 @@ main {
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
-    color: #FFFFFF;
+    color: $primary;
   }
   a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: $primary;
     &:hover {
       text-decoration: underline;
     }
@@ -68,10 +69,10 @@ main {
   .wrapform {
     width: 100%;
     height: 100%;
-    background: rgba(6, 19, 24, 1);
+    background: $bg-form;
   }
   .form-container {
-    border-radius: 10px;
+    border-radius: 0;
     max-width: 35.25rem;
     margin-left: auto;
     margin-right: auto;
@@ -80,7 +81,7 @@ main {
     form {
       .dEVaGV {
         font-family: Helvetica, Arial, sans-serif;
-        color: #FFFFFF;
+        color: rgb(93, 93, 101);
         display: block;
         font-size: 0.875rem;
         font-weight: 400;
@@ -88,7 +89,7 @@ main {
       }
       .submit-button {
         font-family: $font-family-default;
-        background: #09394D;
+        background: $button;
         border-radius: 10px;
         border: none;
         display: inline-block;
@@ -99,7 +100,7 @@ main {
         text-transform: uppercase;
         color: #ffffff;
         outline: currentcolor none 0px;
-        padding: 15px 29px;
+        padding: 22px 68px;
         text-decoration: none;
         transition: background-color 0.1s ease-in 0s, box-shadow 0.1s ease-in 0s;
         text-transform: uppercase;
@@ -109,7 +110,7 @@ main {
         }
       }
       .iFTUZ {
-        color: #FFFFFF;
+        color: rgb(221, 54, 42);
       }
       .iMsgpL {
         appearance: none;
@@ -142,7 +143,7 @@ main {
     justify-content: center;
   }
   h2 {
-    color: #ffffff;
+    color: #707070;
     margin-bottom: 0;
   }
 }
@@ -164,12 +165,12 @@ main {
       margin-bottom: 25px;
       a {
         text-decoration: none;
-        color: #FFFFFF;
+        color: $primary;
         display: flex;
         align-items: center;
         justify-content: space-between;
         svg {
-          fill: #FFFFFF;
+          fill: $primary;
         }
         span {
           margin-left: 8px;
@@ -223,8 +224,8 @@ Meida Queries  991px
 */
 @media (min-width: 991px) {
   body {
-    background-image: url("../../assets/images/BaciaViva_bg.png");
-    background-size: cover;
+    background-image: url("../images/bg.png");
+    background-size: auto auto;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -243,7 +244,7 @@ Meida Queries  991px
   .Header {
     padding: 70px;
     img {
-      width: auto;
+      width: 200px;
       height: auto;
     }
   }
@@ -254,8 +255,8 @@ Meida Queries  991px
     flex-direction: column;
     align-content: center;
     h1 {
-      font-size: 42px;
-      line-height: 50px;
+      font-size: 52px;
+      line-height: 60px;
       margin-bottom: 40px;
     }
     p {
@@ -272,6 +273,7 @@ Meida Queries  991px
       border-radius: 20px;
     }
     .form-container {
+      border-radius: 10px;
       max-width: 35.25rem;
       margin-left: auto;
       margin-right: auto;
@@ -290,7 +292,10 @@ Meida Queries  991px
 // Controle para telas notbook de altura de 768px
 @media screen and (max-height: 768px) and (min-width: 1366px) {
   .Header {
-    padding: 0px 70px;
+    padding: 40px 70px;
+    img {
+      width: 80px;
+    }
   }
 
   .Content {
@@ -298,7 +303,7 @@ Meida Queries  991px
     h1 {
       font-size: 42px;
       line-height: 50px;
-      margin-bottom: 70px;
+      margin-bottom: 20px;
     }
     p {
       font-size: 16px;
